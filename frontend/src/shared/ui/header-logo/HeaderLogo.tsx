@@ -1,19 +1,13 @@
 import { Link } from "react-router-dom"
 
-import { Logo } from "@/shared/ui/icones/Logo"
-
 export const HeaderLogo = () => {
   return (
     <>
       <Link
         to={"/"}
-        className="flex gap-2 justify-center items-center transition-colors hover:bg-accent hover:text-accent-foreground h-14 px-2 focus:outline-none focus-visible:ring-1 focus-visible:ring-ring sm:h-11 sm:gap-1"
+        className="h-10 px-2 flex justify-normal items-center hover:bg-accent hover:text-accent-foreground focus:outline-none ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 rounded-sm text-2xl font-medium"
       >
-        <Logo className="size-8" />
-        <div className="flex flex-col text-xl sm:hidden">
-          <p className="leading-4">DNS</p>
-          <p className="leading-4 italic ml-2">Clone</p>
-        </div>
+        LOGOTYPE
       </Link>
     </>
   )
